@@ -17,6 +17,8 @@ const MenuItem = (dishName, dishDescrip, price, imgPath='') => {
         dishNameContainer.classList.add('dish-name-container');
         dishDescripContainer.classList.add('dish-descrip-container');
         priceContainer.classList.add('price-container');
+        imgContainer.classList.add('img-container');
+        img.classList.add('img-menu');
 
         //set inner text
         dishNameText.innerText = dishName;

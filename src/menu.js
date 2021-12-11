@@ -5,11 +5,11 @@ const menu = (() => {
     const drawMenu = () => {
 
         //some stand-in text
-        const mainHeadingText = "Menu";
-        const entreHeadingText = "Entres";
-        const appetizerHeadingText = "Appetizers";
-        const sidesHeadingText = "Sides";
-        const drinksHeadingText = "Drinks";
+        const mainHeadingText = "menu";
+        const entreHeadingText = "entres";
+        const appetizerHeadingText = "appetizers";
+        const sidesHeadingText = "sides";
+        const drinksHeadingText = "drinks";
 
         //container for main page and heading
         const pageContainer = document.createElement('div');
@@ -74,6 +74,11 @@ const menu = (() => {
         pageContainer.classList.add('page-menu');
 
         //apply styles to child elements
+        mainHeadingContainer.classList.add('main-heading');
+        subHeadingAppetizers.classList.add('sub-heading');
+        subHeadingEntres.classList.add('sub-heading');
+        subHeadingSides.classList.add('sub-heading');
+        subHeadingDrinks.classList.add('sub-heading');
         itemContainerAppetizers.classList.add('item');
         itemContainerEntres.classList.add('item');
         itemContainerSides.classList.add('item');

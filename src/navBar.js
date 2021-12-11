@@ -29,9 +29,16 @@ const navBar = (() => {
         tabContactText.innerText = 'Contact';
         tabContact.appendChild(tabContactText);
 
+        const titleContainer = document.createElement('div');
+        const titleText = document.createElement('span')
+        titleText.innerText = 'herbivore cafe';
+        titleContainer.id = 'restaurant-name';
+        titleContainer.appendChild(titleText);
+
         navContainer.appendChild(tabHome);
         navContainer.appendChild(tabMenu);
         navContainer.appendChild(tabContact);
+        navContainer.appendChild(titleContainer);
 
         _tabHome = tabHome;
         _tabMenu = tabMenu;
