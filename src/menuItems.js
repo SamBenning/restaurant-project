@@ -16,15 +16,15 @@ const menuItems = (() => {
         }
     }
 
-    const generateAppetizers = (container) => {
+    const generateMenuSection = (container, sectionName) => {
 
-        const appetizers = json.appetizers;
+        const section = json[sectionName];
 
-        appetizers.forEach(appetizer => {
-            const price = _setPricePrecision(appetizer.price);
+        section.forEach(item => {
+            const price = _setPricePrecision(item.price);
             const newMenuItemObj = MenuItem(
-                appetizer.name,
-                appetizer.description,
+                item.name,
+                item.description,
                 `$${price}`
             );
             
@@ -50,7 +50,7 @@ const menuItems = (() => {
     }
 
     return {
-        generateAppetizers
+        generateMenuSection
     }
 
 })();

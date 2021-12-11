@@ -58,8 +58,10 @@ const menu = (() => {
         itemContainerDrinks.appendChild(menuItemContainerDrinks);
 
         //call menuItems function to generate menu items
-        menuItems.generateAppetizers(menuItemContainerAppetizers);
-
+        menuItems.generateMenuSection(menuItemContainerAppetizers,'appetizers');
+        menuItems.generateMenuSection(menuItemContainerEntres, 'entres');
+        menuItems.generateMenuSection(menuItemContainerSides, 'sides');
+        menuItems.generateMenuSection(menuItemContainerDrinks, 'drinks');
         //append item containers to pageContainer
         pageContainer.appendChild(itemContainerAppetizers);
         pageContainer.appendChild(itemContainerEntres);

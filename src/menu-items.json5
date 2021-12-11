@@ -38,7 +38,46 @@
         {
             name: 'Pulled Jackfruit BBQ Sandwich',
             description: 'Delicious smoked jackfruit with our house-made \
-            BBQ sauce, served with avacado slaw.'
+            BBQ sauce, served with avacado slaw.',
+            price: 14.00
         }
-    ]
+    ],
+    sides: [
+        {
+            name: "Fresh-Cut Fries",
+            description: 'Fresh with just the right level of crisp. Made with rosemary, \
+            olive oil, and sea salt.',
+            price: 4.00
+        },
+        {
+            name: "Chips 'n Dip",
+            description: 'Our house-made chips served with your choice of salsa, guac, \
+            or cashew queso.',
+            price: 5.00
+        },
+        {
+            name: "House Hummus",
+            description: 'Served with your choice of chips, flat-bread, or carrots',
+            price: 5.50
+        },
+    ],
+    drinks: [
+        {
+            name: "Strawberry Banana Smoothie",
+            description: 'This heavenly smoothie is made with your choice of oatmilk, \
+            soymilk, or almondmilk.',
+            price: 4.50
+        },
+        {
+            name: "Choco-Latte",
+            description: 'Rich, creamy chocolate latte make with pea milk.',
+            price: 4.50
+        },
+        {
+            name: "Herbal Tea",
+            description: 'Fresh-brewed tea made with a flavorful assortment of \
+            herbal ingredients.',
+            price: 4.00
+        }
+    ],
 }
