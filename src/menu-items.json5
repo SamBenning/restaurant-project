@@ -1,0 +1,44 @@
+{
+    name: 'French Fries',
+    description: 'Made from guine Idaho potatoes!',
+    price: 5.50,
+
+    appetizers: [
+        {
+            name: 'Loaded Fries',
+            description: 'Our fresh-cut french fries topped with \
+            chipotle aoili, beyond sausage, and cashew cheese.',
+            price: 5.50,
+        },
+        {
+            name: 'Jalapeno Poppers',
+            description: 'Made with cashew cheese and fresh-cut \
+            jalapeno slices.',
+            price: 6.25
+        },
+        {
+            name: 'Avacado Toast',
+            description: 'Ask about our topping options!',
+            price: 7.00
+        }
+    ],
+    entres: [
+        {
+            name: 'Spicy Shrimpless Cakes',
+            description: 'Made with artichoke hearts, red peppers, \
+            and tofu, and king oyster mushrooms.',
+            price: 15.00
+        },
+        {
+            name: 'Veggie Burger',
+            description: 'Our classic black bean patty topped with \
+            spinach, tomato, and garlic aoili.',
+            price: 12.00
+        },
+        {
+            name: 'Pulled Jackfruit BBQ Sandwich',
+            description: 'Delicious smoked jackfruit with our house-made \
+            BBQ sauce, served with avacado slaw.'
+        }
+    ]
+}
