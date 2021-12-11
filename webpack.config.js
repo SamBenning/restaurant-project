@@ -28,6 +28,10 @@ module.exports = {
                     parse: json5.parse,
                 },
             },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
         ],
     },
 };

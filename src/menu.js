@@ -62,6 +62,7 @@ const menu = (() => {
         menuItems.generateMenuSection(menuItemContainerEntres, 'entres');
         menuItems.generateMenuSection(menuItemContainerSides, 'sides');
         menuItems.generateMenuSection(menuItemContainerDrinks, 'drinks');
+        
         //append item containers to pageContainer
         pageContainer.appendChild(itemContainerAppetizers);
         pageContainer.appendChild(itemContainerEntres);
@@ -71,6 +72,24 @@ const menu = (() => {
         //apply overall page styles
         pageContainer.classList.add('page');
         pageContainer.classList.add('page-menu');
+
+        //apply styles to child elements
+        itemContainerAppetizers.classList.add('item');
+        itemContainerEntres.classList.add('item');
+        itemContainerSides.classList.add('item');
+        itemContainerDrinks.classList.add('item');
+
+        subHeadingContainerAppetizers.classList.add('sub-heading');
+        subHeadingContainerEntres.classList.add('sub-heading');
+        subHeadingContainerSides.classList.add('sub-heading');
+        subHeadingContainerDrinks.classList.add('sub-heading');
+
+
+        menuItemContainerAppetizers.classList.add('menu-items');
+        menuItemContainerEntres.classList.add('menu-items');
+        menuItemContainerSides.classList.add('menu-items');
+        menuItemContainerDrinks.classList.add('menu-items');
+
 
         //set inner text
         mainHeading.innerText = mainHeadingText;

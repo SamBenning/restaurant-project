@@ -9,17 +9,20 @@
             description: 'Our fresh-cut french fries topped with \
             chipotle aoili, beyond sausage, and cashew cheese.',
             price: 5.50,
+            img: 'loadedFries'
         },
         {
             name: 'Jalapeno Poppers',
             description: 'Made with cashew cheese and fresh-cut \
             jalapeno slices.',
-            price: 6.25
+            price: 6.25,
+            img: 'jalapenoPoppers'
         },
         {
             name: 'Avacado Toast',
             description: 'Ask about our topping options!',
-            price: 7.00
+            price: 7.00,
+            img: 'avacadoToast'
         }
     ],
     entres: [
@@ -27,19 +30,22 @@
             name: 'Spicy Shrimpless Cakes',
             description: 'Made with artichoke hearts, red peppers, \
             and tofu, and king oyster mushrooms.',
-            price: 15.00
+            price: 15.00,
+            img: 'shrimplessCakes'
         },
         {
             name: 'Veggie Burger',
             description: 'Our classic black bean patty topped with \
             spinach, tomato, and garlic aoili.',
-            price: 12.00
+            price: 12.00,
+            img: 'veggieBurger'
         },
         {
             name: 'Pulled Jackfruit BBQ Sandwich',
             description: 'Delicious smoked jackfruit with our house-made \
             BBQ sauce, served with avacado slaw.',
-            price: 14.00
+            price: 14.00,
+            img: 'pulledJackfruit'
         }
     ],
     sides: [
@@ -47,18 +53,21 @@
             name: "Fresh-Cut Fries",
             description: 'Fresh with just the right level of crisp. Made with rosemary, \
             olive oil, and sea salt.',
-            price: 4.00
+            price: 4.00,
+            img: 'rosemaryFries'
         },
         {
             name: "Chips 'n Dip",
             description: 'Our house-made chips served with your choice of salsa, guac, \
             or cashew queso.',
-            price: 5.00
+            price: 5.00,
+            img: 'chipsDip'
         },
         {
             name: "House Hummus",
             description: 'Served with your choice of chips, flat-bread, or carrots',
-            price: 5.50
+            price: 5.50,
+            img: 'hummus'
         },
     ],
     drinks: [
@@ -66,18 +75,21 @@
             name: "Strawberry Banana Smoothie",
             description: 'This heavenly smoothie is made with your choice of oatmilk, \
             soymilk, or almondmilk.',
-            price: 4.50
+            price: 4.50,
+            img: 'strawberrySmoothie'
         },
         {
             name: "Choco-Latte",
             description: 'Rich, creamy chocolate latte make with pea milk.',
-            price: 4.50
+            price: 4.50,
+            img: 'chocoLatte'
         },
         {
             name: "Herbal Tea",
             description: 'Fresh-brewed tea made with a flavorful assortment of \
             herbal ingredients.',
-            price: 4.00
+            price: 4.00,
+            img: 'herbalTea'
         }
     ],
 }
