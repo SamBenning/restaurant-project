@@ -1,41 +1,57 @@
 const navBar = (() => {
-    const createNavCointainer = (containerStyle, tabStyle, numTabs) => {
+
+    let _tabHome;
+    let _tabMenu;
+    let _tabContact;
+
+    const drawNavBar = () => {
         const navContainer = document.createElement('div');
-        navContainer.classList.add(containerStyle);
-        for(let i=0; i<numTabs; i++) {
-            const tab = document.createElement('div');
-            tab.classList.add(tabStyle);
-            tab.id = `tab-${i+1}`
-            navContainer.appendChild(tab);
-        }
+        navContainer.classList.add('nav-container');
+
+        const tabHome = document.createElement('div');
+        tabHome.classList.add('nav-tab');
+        tabHome.id = 'tab-home';
+        const tabHomeText = document.createElement('p');
+        tabHomeText.innerText = 'Home';
+        tabHome.appendChild(tabHomeText);
+
+        const tabMenu = document.createElement('div');
+        tabMenu.classList.add('nav-tab');
+        tabMenu.id = 'tab-menu';
+        const tabMenuText = document.createElement('p');
+        tabMenuText.innerText = 'Menu';
+        tabMenu.appendChild(tabMenuText);
+
+        const tabContact = document.createElement('div');
+        tabContact.classList.add('nav-tab');
+        tabContact.id = 'tab-contact';
+        const tabContactText = document.createElement('p');
+        tabContactText.innerText = 'Contact';
+        tabContact.appendChild(tabContactText);
+
+        navContainer.appendChild(tabHome);
+        navContainer.appendChild(tabMenu);
+        navContainer.appendChild(tabContact);
+
+        _tabHome = tabHome;
+        _tabMenu = tabMenu;
+        _tabContact = tabContact;
+
         return navContainer;
     }
 
-    const setTabText = (tabId, text) => {
-        const tab = document.getElementById(tabId);
-        tab.innerText = text;
+    const setTabHomeListener = (someFunc) => {
+        _tabHome.addEventListener('click', someFunc);
     }
 
-    const addClickListenerToTab = (func, tabId) => {
-        const tab = document.getElementById(tabId);
-        tab.addEventListener('click', func);
+    const setTabMenuListener = (someFunc) => {
+        _tabMenu.addEventListener('click', someFunc);
     }
-
-    const addTabStyleOnMouseover = (style, tabId) => {
-        const tab = document.getElementById(tabId);
-        tab.addEventListener('mouseover', (tab) => {
-            tab.classList.add(style);
-        });
-    }
-
-    const helloWorld = () => console.log('Hello World!')
 
     return {
-        createNavCointainer,
-        addClickListenerToTab,
-        addTabStyleOnMouseover,
-        setTabText,
-        helloWorld
+        drawNavBar,
+        setTabHomeListener,
+        setTabMenuListener
     }
 })();
 
