@@ -75,10 +75,6 @@ const menu = (() => {
 
         //apply styles to child elements
         mainHeadingContainer.classList.add('main-heading');
-        subHeadingAppetizers.classList.add('sub-heading');
-        subHeadingEntres.classList.add('sub-heading');
-        subHeadingSides.classList.add('sub-heading');
-        subHeadingDrinks.classList.add('sub-heading');
         itemContainerAppetizers.classList.add('item');
         itemContainerEntres.classList.add('item');
         itemContainerSides.classList.add('item');

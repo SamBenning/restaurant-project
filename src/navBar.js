@@ -68,14 +68,25 @@ const navBar = (() => {
             }
             _selectedTab = _tabMenu;
             _tabMenu.classList.add('nav-tab-selected');
-        })
-      
+        });
+    }
+
+    const setTabContactListener = (someFunc) => {
+        _tabContact.addEventListener('click', someFunc);
+        _tabContact.addEventListener('click', () => {
+            if (_selectedTab) {
+                _selectedTab.classList.remove('nav-tab-selected');
+            }
+            _selectedTab = _tabContact;
+            _tabContact.classList.add('nav-tab-selected');
+        });
     }
 
     return {
         drawNavBar,
         setTabHomeListener,
-        setTabMenuListener
+        setTabMenuListener,
+        setTabContactListener
     }
 })();
 

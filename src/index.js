@@ -1,20 +1,19 @@
 import navBar from './navBar';
 import home from './home';
 import menu from './menu';
+import contact from './contact';
 import backgroundImage from './images/dose-juice-sTPy-oeA3h0-unsplash.jpg';
 import './style.css';
 
 const content = document.createElement('div');
 content.id = 'content';
 const backgroundImg = document.createElement('img');
+const backgroundImgWrapper = document.createElement('div');
 backgroundImg.src = backgroundImage;
-backgroundImg.style.position = 'fixed';
-backgroundImg.style.width = 'auto'
-backgroundImg.style.height = '100%'
-backgroundImg.style.left = '0';
-backgroundImg.style.zIndex = '-1'
-backgroundImg.style.marginLeft = '0'
-document.body.appendChild(backgroundImg);
+backgroundImg.classList.add('background-image');
+backgroundImgWrapper.classList.add('background-image-wrapper');
+backgroundImgWrapper.appendChild(backgroundImg);
+document.body.appendChild(backgroundImgWrapper);
 
 
 let myBar = navBar.drawNavBar();
@@ -41,8 +40,17 @@ const showMenu = () => {
     content.appendChild(menuPage);
 }
 
+const showContact = () => {
+    if (content.firstChild){
+        content.removeChild(content.firstChild);
+    }
+    let contactPage = contact.drawContact();
+    content.appendChild(contactPage);
+}
+
 navBar.setTabHomeListener(showHome);
 navBar.setTabMenuListener(showMenu);
+navBar.setTabContactListener(showContact);
 
 document.body.appendChild(myBar);
 document.body.appendChild(content);

@@ -10,8 +10,8 @@ const home = (() => {
         
         const aboutContentText = "Herbivore Cafe is the best place in town for plant-based cuisine! \
         We use only high-quality, fresh ingredients, and everything is made from scratch."
-        const hoursContentText = "Tuesday-Friday: 12:00pm - 10:00pm \t \
-                                    Saturday-Sunday: 10:00am - 10:00pm \t \
+        const hoursContentText = "Tuesday-Friday: 12:00pm - 10:00pm \n \
+                                    Saturday-Sunday: 10:00am - 10:00pm \n \
                                     Closed Mondays"
         const locationContentText = "123 Main St, Allentown PA, 12345"
 
@@ -65,6 +65,11 @@ const home = (() => {
         itemContainerAbout.classList.add('item');
         itemContainerHours.classList.add('item');
         itemContainerLocation.classList.add('item');
+
+        //apply content container styles
+        contentContainerAbout.classList.add('content-container');
+        contentContainerHours.classList.add('content-container');
+        contentContainerLocation.classList.add('content-container');
 
         //apply heading styles
         mainHeadingContainer.classList.add('main-heading');
