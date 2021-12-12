@@ -3,14 +3,17 @@ const home = (() => {
     const drawHome = () => {
 
         //some stand-in text
-        const mainHeadingText = "Home"
-        const aboutHeadingText = "About";
-        const hoursHeadingText = "Hours";
-        const locationHeadingText = "Location";
+        const mainHeadingText = "home"
+        const aboutHeadingText = "about";
+        const hoursHeadingText = "hours";
+        const locationHeadingText = "location";
         
-        const aboutContentText = "This is the about text."
-        const hoursContentText = "These are our hours."
-        const locationContentText = "This is our location."
+        const aboutContentText = "Herbivore Cafe is the best place in town for plant-based cuisine! \
+        We use only high-quality, fresh ingredients, and everything is made from scratch."
+        const hoursContentText = "Tuesday-Friday: 12:00pm - 10:00pm \t \
+                                    Saturday-Sunday: 10:00am - 10:00pm \t \
+                                    Closed Mondays"
+        const locationContentText = "123 Main St, Allentown PA, 12345"
 
         //container for main page and heading
         const pageContainer = document.createElement('div');

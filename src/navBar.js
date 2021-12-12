@@ -3,6 +3,7 @@ const navBar = (() => {
     let _tabHome;
     let _tabMenu;
     let _tabContact;
+    let _selectedTab;
 
     const drawNavBar = () => {
         const navContainer = document.createElement('div');
@@ -49,10 +50,26 @@ const navBar = (() => {
 
     const setTabHomeListener = (someFunc) => {
         _tabHome.addEventListener('click', someFunc);
+        _tabHome.addEventListener('click', () => {
+            if (_selectedTab) {
+                _selectedTab.classList.remove('nav-tab-selected');
+            }
+            _selectedTab = _tabHome;
+            _tabHome.classList.add('nav-tab-selected');
+        })
+       
     }
 
     const setTabMenuListener = (someFunc) => {
         _tabMenu.addEventListener('click', someFunc);
+        _tabMenu.addEventListener('click', () => {
+            if (_selectedTab) {
+                _selectedTab.classList.remove('nav-tab-selected');
+            }
+            _selectedTab = _tabMenu;
+            _tabMenu.classList.add('nav-tab-selected');
+        })
+      
     }
 
     return {

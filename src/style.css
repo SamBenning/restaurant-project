@@ -55,8 +55,9 @@
          url('./fonts/open-sans-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
+
 body {
-    background-color: burlywood;
+    background-color:transparent;
     display: grid;
     justify-items: center;
     width: auto;
@@ -75,17 +76,18 @@ p {
 
 #content {
     width: auto;
-    background-color: chartreuse;
     display: grid;
     justify-items: center;
+    background-color: transparent;
+    background-size: object-fit;
 }
 
 .nav-container {
     display: grid;
     grid-column-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #fff;
-    height: 100px;
+    background-color: rgb(15, 39, 1);
+    height: auto;
     width: 100%;
 }
 
@@ -95,27 +97,45 @@ p {
     font-size: 2.3em;
     grid-column: 1/4;
     grid-row: 1;
+    color: #fff;
 }
 
 .nav-tab {
+    display: flex;
+    align-content: center;
     font-family: 'Sansita';
-    background-color: aquamarine;
+    color: #fff;
+    background-color: rgb(15, 39, 1);
     width: auto;
     height: 50px;
 }
 
+.nav-tab:hover {background-color: #3e8e41}
+
+.nav-tab:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.nav-tab-selected {
+    background-color: #3e8e41;;
+}
+
 .page {
+    width: 100%;
     display: grid;
     justify-items: center;
-    background-color: white;
+    background-color: transparent;
 }
 
 .page-home {
-    background-color: #fff;
+    width: 100%;
+    background-color:transparent;
 }
 
 .page-menu {
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .page-contanct {
@@ -123,20 +143,24 @@ p {
 }
 
 .item {
-    background-color: #fff;
+    background-color:transparent;
 }
 
 .main-heading {
     font-family: 'Sansita';
     font-style: normal;
     font-weight: 900;
-    background-color: #fff;
+    background-color: transparent;
+}
+
+.main-heading-container {
+    background-color: yellowgreen;
 }
 
 .sub-heading {
     font-family: "Sansita";
     font-style: italic;
-    background-color: #fff;
+    background-color:transparent;
 }
 
 .menu-item {
