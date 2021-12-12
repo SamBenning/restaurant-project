@@ -82,11 +82,20 @@ const navBar = (() => {
         });
     }
 
+    const selectHomeTabOnPageLoad = () => {
+        if (_selectedTab) {
+            _selectedTab.classList.remove('nav-tab-selected');
+        }
+        _selectedTab = _tabHome;
+        _tabHome.classList.add('nav-tab-selected');
+    }
+
     return {
         drawNavBar,
         setTabHomeListener,
         setTabMenuListener,
-        setTabContactListener
+        setTabContactListener,
+        selectHomeTabOnPageLoad
     }
 })();
 

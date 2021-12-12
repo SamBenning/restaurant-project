@@ -55,4 +55,9 @@ navBar.setTabContactListener(showContact);
 document.body.appendChild(myBar);
 document.body.appendChild(content);
 
+window.addEventListener('load', () => {;
+    navBar.selectHomeTabOnPageLoad();
+    showHome();
+})
+
 
